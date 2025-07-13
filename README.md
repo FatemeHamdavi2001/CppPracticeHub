@@ -9,10 +9,11 @@ Each project here is more complex than basic exercises and focuses on solving pr
 ## What's Included?
 
 | File Name               | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| date_validator.cpp     | Validates a full date (day, month, year), including leap year and day checks.|
+|-------------------------|-----------------------------------------------------------------------------|
+| date_validator.cpp      | Validates a full date (day, month, year), including leap year and day checks.|
+| DigitalClock.cpp        | Simulates a real-time digital clock from 00:00:00 with live updates every second. Uses modular functions for time display and increment, handles time overflow (seconds → minutes → hours), and clears console screen for smooth output. Compatible with Windows (uses Sleep and system("cls")). |
 
-More projects coming soon...
+*More projects coming soon...*
 
 ---
 
@@ -28,7 +29,39 @@ More projects coming soon...
 ## Technologies
 
 - Language: C++ (Standard: C++17)  
-- Concepts used: Functions, Conditionals, Logical Operators, Modular Code
+- Concepts used: Functions, Conditionals, Logical Operators, Modular Code  
+- Platform-specific: Windows console for DigitalClock (Sleep and system calls)
+
+---
+
+## Features & Techniques
+
+### DigitalClock.cpp
+- Real-time simulation of clock with 1-second interval updates using `Sleep(1000)`  
+- Modular code: separate functions for displaying time and updating time variables  
+- Time overflow management: seconds roll over to minutes, minutes to hours, hours reset after 24  
+- Console screen clearing for smooth, flicker-free output using `system("cls")` on Windows  
+- Uses `<iomanip>` for formatted output (leading zeros)  
+- Demonstrates basics of event loops and real-time programming in console apps
+
+---
+
+## Structure
+
+Each project is placed in a modular way with:  
+- Clear file names  
+- Proper documentation and comments  
+- Ready to extend with more features  
+
+---
+
+## Coming Up Next
+
+- Bank account manager  
+- Mini calculator with history  
+- Student grading system  
+- File-based user login/register  
+... and more to come!
 
 ---
 
@@ -40,22 +73,5 @@ Computer Science Student | Aspiring C++ Developer
 🔗 GitHub: [@FatemeHamdavi2001](https://github.com/FatemeHamdavi2001)
 
 ---
-
-## Structure
-
-Each project is placed in a modular way with:
-- Clear file names
-- Proper documentation and comments
-- Ready to extend with more features
-
----
-
-## Coming Up Next
-
-- Bank account manager  
-- Mini calculator with history  
-- Student grading system  
-- File-based user login/register  
-... and more to come!
 
 Stay tuned and feel free to fork, explore, and suggest improvements!
