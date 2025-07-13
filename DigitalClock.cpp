@@ -8,7 +8,7 @@ void printTime(int hours, int minutes, int seconds)
     std::cout << '\r'; // Go to the beginning of the line
     std::cout << std::setfill('0') << std::setw(2) << hours << ":"
               << std::setfill('0') << std::setw(2) << minutes << ":"
-              << std::setfill('0') << std::setw(2) << seconds << std::flush;
+              << std::setfill('0') << std::setw(2) << seconds << std::flush; //std::fhush : print now(don't wait)
 }
 //Function to update time variables
 void updateTime(int& hours, int& minutes, int& seconds)
