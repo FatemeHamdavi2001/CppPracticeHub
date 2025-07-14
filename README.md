@@ -38,14 +38,35 @@ Each project here is more complex than basic exercises and focuses on solving pr
 ## Features & Techniques
 
 ### DigitalClock.cpp
-- Real-time simulation of clock with 1-second interval updates using `Sleep(1000)`  
-- Modular code: separate functions for displaying time and updating time variables  
-- Time overflow management: seconds roll over to minutes, minutes to hours, hours reset after 24  
-- Console screen clearing for smooth, flicker-free output using `system("cls")` on Windows  
-- Uses `<iomanip>` for formatted output (leading zeros)  
-- Demonstrates basics of event loops and real-time programming in console apps
+## Features & Techniques
+
+### date_validator.cpp
+- Validates full dates including day, month, and year (e.g., 31/4/2023 is invalid)
+- Leap year support using Gregorian calendar rules
+- Uses `switch-case` to return correct number of days in each month
+- Modular design with separate functions for leap year check, day count, and validation
+- Provides specific error messages for invalid input parts (day/month/year)
+- Uses `std::cin.fail()` to catch non-numeric input errors
 
 ---
+
+### DigitalClock.cpp
+- Simulates a live digital clock with hours, minutes, and seconds
+- Uses `Sleep(1000)` for 1-second real-time updates (Windows-only)
+- Uses `\r` and `std::flush` to overwrite output on the same line for smooth display
+- Time overflow handling: seconds → minutes → hours → resets after 24
+- Uses `<iomanip>` for formatting output with leading zeros
+
+---
+
+### calculator_menu.cpp
+- Menu-based calculator with 6 operations: add, subtract, multiply, divide, power, factorial
+- Each operation implemented in its own function for clean modular structure
+- Handles edge cases like divide-by-zero, negative factorial, and undefined power (e.g., 0^0)
+- Uses `switch-case` to manage menu logic and loop for continuous interaction
+- Input validation with helpful error messages for incorrect values
+- Pauses after each operation to improve user experience using `std::cin.get()`
+
 
 ## Structure
 
