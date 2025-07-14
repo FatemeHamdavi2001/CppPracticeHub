@@ -12,6 +12,7 @@ Each project here is more complex than basic exercises and focuses on solving pr
 |-------------------------|-----------------------------------------------------------------------------|
 | date_validator.cpp      | Validates a full date (day, month, year), including leap year and day checks.|
 | DigitalClock.cpp        | Simulates a real-time digital clock from 00:00:00 with live updates every second. Uses modular functions for time display and increment, handles time overflow (seconds → minutes → hours), and clears console screen for smooth output. Compatible with Windows (uses Sleep and system("cls")). |
+| calculator_menu.cpp  | A menu-driven calculator implementing addition, subtraction, multiplication, division, power (a^b), factorial, and exit option. Uses modular functions and input validation. |
 
 *More projects coming soon...*
 
