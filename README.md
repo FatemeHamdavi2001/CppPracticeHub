@@ -13,6 +13,7 @@ Each project here is more complex than basic exercises and focuses on solving pr
 | date_validator.cpp      | Validates a full date (day, month, year), including leap year and day checks.|
 | DigitalClock.cpp        | Simulates a real-time digital clock from 00:00:00 with live updates every second. Uses modular functions for time display and increment, handles time overflow (seconds → minutes → hours), and clears console screen for smooth output. Compatible with Windows (uses Sleep and system("cls")). |
 | calculator_menu.cpp  | A menu-driven calculator implementing addition, subtraction, multiplication, division, power (a^b), factorial, and exit option. Uses modular functions and input validation. |
+| voting_system.cpp       | A simple interactive voting system that lets users vote for candidates, stores results in an array, and displays the winner. Modular design with functions for menu, voting, result display, and input handling. |
 
 *More projects coming soon...*
 
@@ -35,9 +36,6 @@ Each project here is more complex than basic exercises and focuses on solving pr
 
 ---
 
-## Features & Techniques
-
-### DigitalClock.cpp
 ## Features & Techniques
 
 ### date_validator.cpp
@@ -66,6 +64,16 @@ Each project here is more complex than basic exercises and focuses on solving pr
 - Uses `switch-case` to manage menu logic and loop for continuous interaction
 - Input validation with helpful error messages for incorrect values
 - Pauses after each operation to improve user experience using `std::cin.get()`
+
+---
+
+### voting_system.cpp
+- Simple interactive voting program using array-based vote counting  
+- Modular structure: separate functions for menu, voting, result display  
+- Input validation and user-friendly prompts for smooth interaction  
+- Uses loop and conditionals to keep voting running until user exits  
+- Demonstrates beginner-friendly logic for user selection and tallying
+
 
 
 ## Structure
